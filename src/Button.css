@@ -1,0 +1,8 @@
+.Button {
+  text-align: center;
+  background-color: pink; 
+  width: 70px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
