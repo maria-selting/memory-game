@@ -1,13 +1,14 @@
 .Card {
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: square;
   justify-content: center;
   padding: 10px;
+  list-style: square;
 }
 
 .Card ul li {
-	list-style-type: none;
+	list-style: square;
 	height: 150px;
 	width: 150px;
 	background-color: lightblue;

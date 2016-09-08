@@ -1,9 +1,9 @@
 import React from 'react';
 import _ from 'lodash';
 import './App.css';
-import Header from './Header.js'
-import Content from './Content.js'
-import Footer from './Footer.js'
+import Header from './Header.js';
+import Content from './Content.js';
+import Footer from './Footer.js';
 
 const App = React.createClass({
   displayName: 'App',
@@ -16,7 +16,6 @@ const App = React.createClass({
       flipped: [],
     }
   },
-
 
   handleStartNewGame() {
     const numberOfCards = 4
@@ -39,7 +38,6 @@ const App = React.createClass({
         isFlipped: false,
       }
     }
-  
 
     this.setState({
       numberOfCards: numberOfCards,

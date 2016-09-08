@@ -10,9 +10,25 @@ const Content = React.createClass({
 		numberOfCards: React.PropTypes.number,
 	},
 
+
 renderCards() {
-	console.log('Hejsan!') 
-},
+
+	let cardComponents = []
+
+	for (let i = 0; i < this.props.numberOfCards; i++) {
+		cardComponents.push(
+			<Card 
+				key={this.props.cards[i].id}
+				id={this.props.cards[i].id}
+				image={this.props.cards[i].id}
+				isFlipped={this.props.cards[i].isFlipped}
+			/>)
+
+	}
+
+	return cardComponents
+
+	},
 
   render() {
     return (
@@ -22,6 +38,7 @@ renderCards() {
     );
   }
 })
+
 
 
 export default Content;
